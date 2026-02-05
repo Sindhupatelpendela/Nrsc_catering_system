@@ -1,0 +1,381 @@
+[02-Feb-2026 07:02:47 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'nrsc_catering.requests' doesn't exist in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\employee\dashboard.php:18
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\employee\dashboard.php(18): PDO->query('SELECT COUNT(*)...')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\employee\dashboard.php on line 18
+[02-Feb-2026 07:02:52 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'nrsc_catering.requests' doesn't exist in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\employee\dashboard.php:18
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\employee\dashboard.php(18): PDO->query('SELECT COUNT(*)...')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\employee\dashboard.php on line 18
+[02-Feb-2026 07:02:53 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'nrsc_catering.requests' doesn't exist in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\employee\dashboard.php:18
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\employee\dashboard.php(18): PDO->query('SELECT COUNT(*)...')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\employee\dashboard.php on line 18
+[04-Feb-2026 07:40:56 Europe/Berlin] PHP Warning:  Undefined variable $executeQuery in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\employee\new_request.php on line 127
+[04-Feb-2026 07:40:56 Europe/Berlin] PHP Fatal error:  Uncaught Error: Value of type null is not callable in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\employee\new_request.php:127
+Stack trace:
+#0 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\employee\new_request.php on line 127
+[04-Feb-2026 07:42:01 Europe/Berlin] PHP Warning:  Undefined variable $executeQuery in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\employee\new_request.php on line 127
+[04-Feb-2026 07:42:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Value of type null is not callable in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\employee\new_request.php:127
+Stack trace:
+#0 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\employee\new_request.php on line 127
+[04-Feb-2026 10:52:07 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 10:59:05 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 10:59:09 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 10:59:10 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:01:32 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:01:34 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:01:34 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:01:39 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:01:41 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:01:43 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:01:43 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:01:44 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:03:56 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:04:04 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:04:05 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:04:09 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:04:12 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:05:16 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:05:19 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:05:20 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:05:20 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:05:20 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:05:21 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:05:21 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:05:22 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:05:22 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:05:22 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:05:23 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:05:41 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:06:55 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:06:58 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:06:58 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:30:55 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:36:39 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:36:40 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:36:40 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:36:40 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:36:40 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:37:16 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:37:18 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:37:20 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:37:20 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:20
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(20): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 20
+[04-Feb-2026 11:44:53 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:21
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(21): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 21
+[04-Feb-2026 11:44:55 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:21
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(21): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 21
+[04-Feb-2026 11:44:56 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:21
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(21): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 21
+[04-Feb-2026 11:44:56 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:21
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(21): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 21
+[04-Feb-2026 11:45:28 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:21
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(21): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 21
+[04-Feb-2026 11:45:30 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:21
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(21): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 21
+[04-Feb-2026 11:45:31 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:21
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(21): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 21
+[04-Feb-2026 11:45:34 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:21
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(21): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 21
+[04-Feb-2026 11:45:36 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:21
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(21): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 21
+[04-Feb-2026 11:45:37 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:21
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(21): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 21
+[04-Feb-2026 11:49:39 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:21
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(21): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 21
+[04-Feb-2026 11:56:11 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:21
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(21): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 21
+[04-Feb-2026 11:56:16 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:21
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(21): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 21
+[04-Feb-2026 12:04:43 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:28
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(28): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 28
+[04-Feb-2026 12:04:50 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:28
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(28): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 28
+[04-Feb-2026 12:10:29 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:28
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(28): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 28
+[05-Feb-2026 05:37:11 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:28
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(28): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 28
+[05-Feb-2026 05:37:15 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:28
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(28): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 28
+[05-Feb-2026 05:57:44 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u.full_name' in 'field list' in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php:28
+Stack trace:
+#0 C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php(28): PDO->query('\r\n    SELECT r....')
+#1 {main}
+  thrown in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\dashboard.php on line 28
+[05-Feb-2026 06:51:11 Europe/Berlin] PHP Warning:  Undefined variable $current_user in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 137
+[05-Feb-2026 06:51:11 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 137
+[05-Feb-2026 06:51:11 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 137
+[05-Feb-2026 06:51:27 Europe/Berlin] PHP Warning:  Undefined variable $current_user in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 137
+[05-Feb-2026 06:51:27 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 137
+[05-Feb-2026 06:51:27 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 137
+[05-Feb-2026 06:53:38 Europe/Berlin] PHP Warning:  Undefined variable $current_user in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 137
+[05-Feb-2026 06:53:38 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 137
+[05-Feb-2026 06:53:38 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 137
+[05-Feb-2026 06:55:18 Europe/Berlin] PHP Warning:  Undefined variable $current_user in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 137
+[05-Feb-2026 06:55:18 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 137
+[05-Feb-2026 06:55:18 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 137
+[05-Feb-2026 07:02:27 Europe/Berlin] PHP Warning:  Undefined variable $current_user in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 166
+[05-Feb-2026 07:02:27 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 166
+[05-Feb-2026 07:02:27 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 166
+[05-Feb-2026 07:04:56 Europe/Berlin] PHP Warning:  Undefined variable $current_user in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 166
+[05-Feb-2026 07:04:56 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 166
+[05-Feb-2026 07:04:56 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 166
+[05-Feb-2026 07:10:47 Europe/Berlin] PHP Warning:  Undefined variable $current_user in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 206
+[05-Feb-2026 07:10:47 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 206
+[05-Feb-2026 07:10:47 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 206
+[05-Feb-2026 07:16:45 Europe/Berlin] PHP Warning:  Undefined variable $current_user in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 206
+[05-Feb-2026 07:16:45 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 206
+[05-Feb-2026 07:16:45 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 206
+[05-Feb-2026 07:17:14 Europe/Berlin] PHP Warning:  Undefined variable $current_user in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 206
+[05-Feb-2026 07:17:14 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 206
+[05-Feb-2026 07:17:14 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 206
+[05-Feb-2026 07:17:19 Europe/Berlin] PHP Warning:  Undefined variable $current_user in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 206
+[05-Feb-2026 07:17:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 206
+[05-Feb-2026 07:17:19 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 206
+[05-Feb-2026 07:20:04 Europe/Berlin] PHP Warning:  Undefined variable $current_user in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 206
+[05-Feb-2026 07:20:04 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 206
+[05-Feb-2026 07:20:04 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 206
+[05-Feb-2026 07:20:18 Europe/Berlin] PHP Warning:  Undefined variable $current_user in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 206
+[05-Feb-2026 07:20:18 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 206
+[05-Feb-2026 07:20:18 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 206
+[05-Feb-2026 07:21:10 Europe/Berlin] PHP Warning:  Undefined variable $current_user in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 206
+[05-Feb-2026 07:21:10 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 206
+[05-Feb-2026 07:21:10 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 206
+[05-Feb-2026 07:21:55 Europe/Berlin] PHP Warning:  Undefined variable $current_user in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 206
+[05-Feb-2026 07:21:55 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 206
+[05-Feb-2026 07:21:55 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 206
+[05-Feb-2026 07:23:36 Europe/Berlin] PHP Warning:  Undefined variable $current_user in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 206
+[05-Feb-2026 07:23:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 206
+[05-Feb-2026 07:23:36 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 206
+[05-Feb-2026 07:29:21 Europe/Berlin] PHP Warning:  Undefined variable $current_user in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 239
+[05-Feb-2026 07:29:21 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 239
+[05-Feb-2026 07:29:21 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 239
+[05-Feb-2026 07:29:49 Europe/Berlin] PHP Warning:  Undefined variable $current_user in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 239
+[05-Feb-2026 07:29:49 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 239
+[05-Feb-2026 07:29:49 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 239
