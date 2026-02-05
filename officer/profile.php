@@ -158,21 +158,42 @@ include '../includes/header.php';
 
     /* --- SIDEBAR ENHANCEMENTS (Local Override) --- */
     .sidebar .nav-item {
-        font-size: 1.25rem !important; /* Larger Menu Links */
-        padding: 18px 25px !important;
-        margin-bottom: 10px !important;
-        font-weight: 500 !important;
-        letter-spacing: 0.3px;
-        border-radius: 12px;
+        font-size: 1.6rem !important; /* Huge Menu Links */
+        padding: 22px 30px !important;
+        margin-bottom: 15px !important;
+        font-weight: 700 !important;
+        letter-spacing: 0.5px;
+        color: #1E3A8A !important; /* Dark Blue */
+        border-radius: 16px;
+    }
+    .sidebar .nav-item.active {
+        background: #EFF6FF !important;
+        color: #1E40AF !important; /* Slightly lighter blue for active */
+    }
+    .sidebar .nav-item i {
+        color: #1E3A8A !important; /* Icons Dark Blue too */
+        font-size: 1.6rem !important;
+        width: 35px;
     }
     .sidebar .profile-name {
-        font-size: 1.6rem !important; /* Larger Profile Name */
-        margin-top: 15px;
-        margin-bottom: 5px;
+        font-size: 2.2rem !important; /* Huge Profile Name */
+        margin-top: 25px;
+        margin-bottom: 10px;
+        color: #172554 !important; /* Very Dark Blue */
     }
     .sidebar .profile-role-badge {
-        font-size: 0.9rem !important;
-        padding: 6px 16px !important;
+        font-size: 1.2rem !important;
+        padding: 10px 20px !important;
+        background: #DBEAFE !important;
+        color: #1E3A8A !important; /* Dark Blue Text */
+        font-weight: 800 !important;
+    }
+    .sidebar .btn-profile-sm {
+        font-size: 1.2rem !important;
+        padding: 12px 30px !important;
+        color: #1E3A8A !important;
+        border: 2px solid #BFDBFE !important;
+        font-weight: 700 !important;
     }
 
     /* --- PROFESSIONAL FORM STYLING --- */

@@ -379,3 +379,30 @@ Stack trace:
 [05-Feb-2026 07:29:49 Europe/Berlin] PHP Warning:  Undefined variable $current_user in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 239
 [05-Feb-2026 07:29:49 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 239
 [05-Feb-2026 07:29:49 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 239
+[05-Feb-2026 07:42:05 Europe/Berlin] PHP Warning:  Undefined variable $current_user in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 239
+[05-Feb-2026 07:42:05 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 239
+[05-Feb-2026 07:42:05 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 239
+[05-Feb-2026 07:46:23 Europe/Berlin] PHP Warning:  Undefined variable $current_user in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 243
+[05-Feb-2026 07:46:23 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 243
+[05-Feb-2026 07:46:23 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 243
+[05-Feb-2026 07:46:25 Europe/Berlin] PHP Warning:  Undefined variable $current_user in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 243
+[05-Feb-2026 07:46:25 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 243
+[05-Feb-2026 07:46:25 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 243
+[05-Feb-2026 07:48:53 Europe/Berlin] PHP Warning:  Undefined variable $current_user in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 260
+[05-Feb-2026 07:48:53 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 260
+[05-Feb-2026 07:48:53 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 260
+[05-Feb-2026 07:48:57 Europe/Berlin] PHP Warning:  Undefined variable $current_user in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 260
+[05-Feb-2026 07:48:57 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 260
+[05-Feb-2026 07:48:57 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 260
+[05-Feb-2026 07:49:10 Europe/Berlin] PHP Warning:  Undefined variable $current_user in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 260
+[05-Feb-2026 07:49:10 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 260
+[05-Feb-2026 07:49:10 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 260
+[05-Feb-2026 07:49:11 Europe/Berlin] PHP Warning:  Undefined variable $current_user in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 260
+[05-Feb-2026 07:49:11 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 260
+[05-Feb-2026 07:49:11 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 260
+[05-Feb-2026 07:49:11 Europe/Berlin] PHP Warning:  Undefined variable $current_user in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 260
+[05-Feb-2026 07:49:11 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 260
+[05-Feb-2026 07:49:11 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 260
+[05-Feb-2026 07:49:11 Europe/Berlin] PHP Warning:  Undefined variable $current_user in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 260
+[05-Feb-2026 07:49:11 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 260
+[05-Feb-2026 07:49:11 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 260
