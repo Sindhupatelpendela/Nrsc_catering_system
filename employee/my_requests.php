@@ -67,6 +67,70 @@ $requests = fetchAll(
 include __DIR__ . '/../includes/header.php';
 ?>
 
+<style>
+    /* --- SIDEBAR ENHANCEMENTS (Employee Portal) --- */
+    .sidebar {
+        width: 380px !important; 
+        background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
+        border-right: 1px solid #E2E8F0;
+    }
+    
+    .sidebar .menu-category {
+        font-size: 1.8rem !important; 
+        font-weight: 900 !important;
+        color: #16A34A !important;  /* Green */
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin: 35px 0 15px 5px !important;
+        padding-left: 10px;
+        border-left: 5px solid #16A34A;
+    }
+
+    .sidebar .nav-menu li a {
+        display: flex !important;
+        align-items: center;
+        font-size: 2.2rem !important; 
+        padding: 25px 30px !important;
+        margin-bottom: 20px !important;
+        font-weight: 700 !important;
+        color: #334155 !important;
+        border: 2px solid #E2E8F0 !important;
+        border-radius: 20px !important;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        background: #FFFFFF;
+        text-decoration: none;
+    }
+
+    .sidebar .nav-menu li a:hover {
+         transform: translateX(10px);
+         border-color: #3B82F6 !important;
+         background: #EFF6FF !important;
+         color: #1E40AF !important;
+         box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    .sidebar .nav-menu li a.active {
+         background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%) !important;
+         border-color: #2563EB !important;
+         color: #1E40AF !important;
+         box-shadow: 0 5px 15px rgba(37, 99, 235, 0.15);
+    }
+
+    .sidebar .nav-menu li a i {
+        width: 50px;
+        font-size: 2.2rem;
+        text-align: center;
+        margin-right: 15px;
+        color: #64748B;
+        transition: color 0.3s;
+    }
+    
+    .sidebar .nav-menu li a:hover i,
+    .sidebar .nav-menu li a.active i {
+        color: #2563EB;
+    }
+</style>
+
 <div class="dashboard-container">
     <!-- Sidebar included via code or template? User code didn't have it. 
          header.php matches the "Light" main.css theme.
@@ -79,11 +143,11 @@ include __DIR__ . '/../includes/header.php';
          OTHERWISE it's just a blank page with a header.
     -->
     <aside class="sidebar">
-        <div class="logo-area">
-            <div class="logo-icon"><i class="fas fa-utensils"></i></div>
+        <div class="logo-area" style="text-align: center; padding: 30px 5px;">
+            <img src="../assets/nrsc_custom_logo.png" alt="NRSC Logo" style="width: 330px; height: 330px; object-fit: contain; margin-bottom: 20px;">
             <div class="logo-text">
-                <h2>NRSC CATERING</h2>
-                <span>Employee Portal</span>
+                <h2 style="font-size: 3rem; color: #EA580C; font-weight: 900; letter-spacing: 0.5px; line-height: 1.1;">NRSC CATERING</h2>
+                <span style="font-size: 1.6rem; color: #64748B; font-weight: 700; text-transform: uppercase; display: block; margin-top: 10px;">Employee Portal</span>
             </div>
         </div>
 

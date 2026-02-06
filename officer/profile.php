@@ -157,43 +157,58 @@ include '../includes/header.php';
     }
 
     /* --- SIDEBAR ENHANCEMENTS (Local Override) --- */
+    .sidebar {
+        width: 380px !important; 
+        background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
+        box-shadow: 4px 0 25px rgba(0,0,0,0.05);
+    }
     .sidebar .nav-item {
-        font-size: 1.6rem !important; /* Huge Menu Links */
-        padding: 22px 30px !important;
-        margin-bottom: 15px !important;
+        font-size: 2.2rem !important; /* Huge Links */
+        padding: 25px 30px !important; 
+        margin-bottom: 20px !important;
         font-weight: 700 !important;
         letter-spacing: 0.5px;
-        color: #1E3A8A !important; /* Dark Blue */
-        border-radius: 16px;
+        color: #1E3A8A !important;
+        border: 2px solid #E2E8F0 !important; 
+        border-radius: 20px !important;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        overflow: hidden;
+        background: #FFFFFF;
+    }
+    .sidebar .nav-item:hover {
+        background: #F8FAFC !important;
+        border-color: #3B82F6 !important; /* Blue Border on Hover */
+        transform: translateY(-3px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+        color: #1E40AF !important;
     }
     .sidebar .nav-item.active {
         background: #EFF6FF !important;
-        color: #1E40AF !important; /* Slightly lighter blue for active */
-    }
-    .sidebar .nav-item i {
-        color: #1E3A8A !important; /* Icons Dark Blue too */
-        font-size: 1.6rem !important;
-        width: 35px;
+        border-color: #2563EB !important; /* Active Blue Border */
+        color: #1E40AF !important;
+        box-shadow: 0 8px 15px rgba(37, 99, 235, 0.1);
     }
     .sidebar .profile-name {
-        font-size: 2.2rem !important; /* Huge Profile Name */
+        font-size: 2.2rem !important;
         margin-top: 25px;
         margin-bottom: 10px;
-        color: #172554 !important; /* Very Dark Blue */
-    }
-    .sidebar .profile-role-badge {
-        font-size: 1.2rem !important;
-        padding: 10px 20px !important;
-        background: #DBEAFE !important;
-        color: #1E3A8A !important; /* Dark Blue Text */
-        font-weight: 800 !important;
+        color: #0F172A !important;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.05);
     }
     .sidebar .btn-profile-sm {
-        font-size: 1.2rem !important;
+        font-size: 1.4rem !important;
         padding: 12px 30px !important;
         color: #1E3A8A !important;
         border: 2px solid #BFDBFE !important;
         font-weight: 700 !important;
+        background: white;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .sidebar .btn-profile-sm:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(37, 99, 235, 0.15);
+        background: #F0F9FF;
     }
 
     /* --- PROFESSIONAL FORM STYLING --- */
@@ -243,10 +258,11 @@ include '../includes/header.php';
 <div class="dashboard-container">
     <!-- SIDEBAR -->
     <aside class="sidebar">
-        <div class="logo-area">
-            <img src="../assets/nrsc_logo_circle.png" alt="NRSC Logo" class="logo-img">
+        <div class="logo-area" style="text-align: center; padding: 30px 5px;">
+            <img src="../assets/nrsc_custom_logo.png" alt="NRSC Logo" style="width: 330px; height: 330px; object-fit: contain; margin-bottom: 20px;">
             <div class="logo-text">
-                <h2>NRSC CATERING</h2>
+                <h2 style="font-size: 3rem; color: #EA580C; font-weight: 900; letter-spacing: 0.5px; line-height: 1.1;">NRSC CATERING</h2>
+                <span style="font-size: 1.6rem; color: #64748B; font-weight: 700; text-transform: uppercase; display: block; margin-top: 10px;">Officer Portal</span>
             </div>
         </div>
 

@@ -64,46 +64,139 @@ $requests = fetchAll(
     $params, $types
 );
 
+// Fetch User for Sidebar
+$user_stmt = $pdo->prepare("SELECT * FROM users WHERE id = ?");
+$user_stmt->execute([$userId]);
+$current_user = $user_stmt->fetch(PDO::FETCH_ASSOC);
+
+$sidebar_image = ($current_user['profile_image']) ? "../uploads/profiles/" . $current_user['profile_image'] : "";
+$initials = strtoupper(substr($current_user['name'], 0, 2));
+
+
 include __DIR__ . '/../includes/header.php';
 ?>
 
+<style>
+    /* --- ANIMATIONS & LAYOUT --- */
+    :root {
+        --primary-color: #EA580C;
+        --secondary-color: #1E293B;
+        --text-muted: #64748B;
+        --bg-light: #F8FAFC;
+    }
+
+    /* --- SIDEBAR ENHANCEMENTS (Local Override) --- */
+    .sidebar {
+        width: 380px !important; 
+        background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
+        box-shadow: 4px 0 25px rgba(0,0,0,0.05);
+    }
+    .sidebar .nav-item {
+        font-size: 2.2rem !important; /* Huge Links */
+        padding: 25px 30px !important; 
+        margin-bottom: 20px !important;
+        font-weight: 700 !important;
+        letter-spacing: 0.5px;
+        color: #1E3A8A !important;
+        border: 2px solid #E2E8F0 !important; 
+        border-radius: 20px !important;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        overflow: hidden;
+        background: #FFFFFF;
+    }
+    .sidebar .nav-item:hover {
+        background: #F8FAFC !important;
+        border-color: #3B82F6 !important; /* Blue Border on Hover */
+        transform: translateY(-3px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+        color: #1E40AF !important;
+    }
+    .sidebar .nav-item.active {
+        background: #EFF6FF !important;
+        border-color: #2563EB !important; /* Active Blue Border */
+        color: #1E40AF !important;
+        box-shadow: 0 8px 15px rgba(37, 99, 235, 0.1);
+    }
+    .sidebar .profile-name {
+        font-size: 2.2rem !important;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        color: #0F172A !important;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    }
+    .sidebar .btn-profile-sm {
+        font-size: 1.4rem !important;
+        padding: 12px 30px !important;
+        color: #1E3A8A !important;
+        border: 2px solid #BFDBFE !important;
+        font-weight: 700 !important;
+        background: white;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .sidebar .btn-profile-sm:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(37, 99, 235, 0.15);
+        background: #F0F9FF;
+    }
+</style>
+
 <div class="dashboard-container">
-    <!-- Sidebar included via code or template? User code didn't have it. 
-         header.php matches the "Light" main.css theme.
-         I will include the sidebar structure manually if header doesn't providing it.
-         Looking at header.php, it ends at </header>.
-         Looking at main.css, there is a .sidebar class.
-         I'll assume I need to structurally add the sidebar for the page to look correct in the "Light" theme context.
-         BUT the user code in 124 started with <div class="flex-between"> immediately after header.
-         I will wrap it in a .dashboard-container and add the sidebar to be helpful, 
-         OTHERWISE it's just a blank page with a header.
-    -->
     <aside class="sidebar">
-        <div class="logo-area">
-            <div class="logo-icon"><i class="fas fa-utensils"></i></div>
+        <div class="logo-area" style="text-align: center; padding: 30px 5px;">
+            <img src="../assets/nrsc_custom_logo.png" alt="NRSC Logo" style="width: 330px; height: 330px; object-fit: contain; margin-bottom: 20px;">
             <div class="logo-text">
-                <h2>NRSC CATERING</h2>
-                <span>Employee Portal</span>
+                <h2 style="font-size: 3rem; color: #EA580C; font-weight: 900; letter-spacing: 0.5px; line-height: 1.1;">NRSC CATERING</h2>
+                <span style="font-size: 1.6rem; color: #64748B; font-weight: 700; text-transform: uppercase; display: block; margin-top: 10px;">Officer Portal</span>
             </div>
         </div>
 
-        <ul class="nav-menu">
-            <div class="menu-category">Menu</div>
-            <li><a href="dashboard.php"><i class="fas fa-grid-2"></i> Dashboard</a></li>
-            <li><a href="new_request.php"><i class="fas fa-plus-circle"></i> New Request</a></li>
-            <li><a href="my_requests.php" class="active"><i class="fas fa-clock-rotate-left"></i> My Requests</a></li>
+        <div class="user-profile-sidebar">
+            <?php if($sidebar_image): ?>
+                <img src="<?php echo $sidebar_image; ?>" class="profile-circle" style="object-fit:cover; border: 4px solid #3B82F6;">
+            <?php else: ?>
+                <div class="profile-circle"><?php echo $initials; ?></div>
+            <?php endif; ?>
             
-            <div class="menu-category">Account</div>
-            <li><a href="change_password.php"><i class="fas fa-lock"></i> Change Password</a></li>
-            <li><a href="../auth/logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            <div class="profile-name"><?php echo htmlspecialchars($current_user['name']); ?></div>
+            <div class="profile-role-badge">APPROVING OFFICER</div>
+            <button class="btn-profile-sm" onclick="window.location.href='profile.php'">My Profile</button>
+        </div>
+
+        <ul class="nav-menu">
+            <li><a href="dashboard.php" class="nav-item">
+                <i class="fas fa-th-large"></i> Dashboard
+            </a></li>
+            <li><a href="new_request.php" class="nav-item">
+                <i class="fas fa-plus-circle"></i> New Request
+            </a></li>
+            <li><a href="my_requests.php" class="nav-item active">
+                <i class="fas fa-clock-rotate-left"></i> My Requests
+            </a></li>
+             <div style="flex: 1;"></div>
+            <li><a href="dashboard.php?tab=approved" class="nav-item">
+                <i class="fas fa-check-circle"></i> Approved Orders
+            </a></li>
+            <li><a href="dashboard.php?tab=completed" class="nav-item">
+                <i class="fas fa-clipboard-check"></i> Completed Orders
+            </a></li>
+            
+            <div style="flex: 1;"></div> 
+            
+            <li><a href="../auth/change_password.php" class="nav-item">
+                <i class="fas fa-key"></i> Change Password
+            </a></li>
+            <li><a href="../auth/logout.php" class="nav-item">
+                <i class="fas fa-sign-out-alt"></i> Logout
+            </a></li>
         </ul>
     </aside>
 
     <main class="main-content">
         <header class="page-header">
             <div>
-                <p class="breadcrumb">Employee Portal / History</p>
-                <h1>My Requests</h1>
+                <p class="breadcrumb">OFFICER PORTAL / HISTORY</p>
+                <h1>My Request History</h1>
             </div>
             <a href="new_request.php" class="btn-lg btn-primary" style="text-decoration: none;">
                 <i class="fas fa-plus-circle" style="margin-right: 10px;"></i> New Request

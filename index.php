@@ -54,11 +54,11 @@ if (isset($_SESSION['user_id'])) {
             <div class="branding-content">
                 <!-- Official NRSC/ISRO Logo -->
                 <!-- National Emblem -->
-                <div class="main-title-container">
-                    <div class="catering-logo-spinner">
-                        <i class="fas fa-utensils"></i>
+                <div class="main-title-container" style="justify-content: flex-start;">
+                    <div class="catering-logo-spinner" style="width: 150px; height: 150px; margin-right: 30px;">
+                        <i class="fas fa-utensils" style="font-size: 5rem;"></i>
                     </div>
-                    <h1 class="brand-title-large">
+                    <h1 class="brand-title-large" style="font-size: 8rem; line-height: 1; white-space: nowrap; letter-spacing: 6px; text-shadow: 0 0 30px rgba(255, 153, 51, 0.6);">
                         Online Catering System
                     </h1>
                 </div>
@@ -66,67 +66,67 @@ if (isset($_SESSION['user_id'])) {
 
 
                 <!-- 3. Identity Section (Logo + Text) -->
-                <div class="identity-lockup">
-                    <div class="logo-box">
+                <div class="identity-lockup" style="padding: 40px; width: 100%;">
+                    <div class="logo-box" style="width: 200px; padding-right: 40px;">
                         <img src="./assets/nrsc_isro_logo.png" alt="NRSC ISRO Logo" class="side-logo">
                     </div>
                     <div class="org-text-stack">
-                        <h2 class="org-name">National Remote Sensing Centre</h2>
-                        <h3 class="org-dept">Indian Space Research Organisation</h3>
-                        <p class="org-city">Hyderabad</p>
+                        <h2 class="org-name" style="font-size: 4.5rem; line-height: 1.1; letter-spacing: 2px;">National Remote Sensing Centre</h2>
+                        <h3 class="org-dept" style="font-size: 2.5rem; margin-top: 15px; letter-spacing: 3px; font-weight: 700;">Indian Space Research Organisation</h3>
+                        <p class="org-city" style="font-size: 2rem; margin-top: 10px; letter-spacing: 6px; color: rgba(255,255,255,0.8);">Hyderabad</p>
                     </div>
                 </div>
                 
                 <!-- Feature Cards (Clickable) -->
-                <div class="feature-list">
-                    <div class="feature-item" onclick="window.location.href='food_ordering.php'">
-                        <div class="feature-icon">
+                <div class="feature-list" style="gap: 25px;">
+                    <div class="feature-item" onclick="window.location.href='food_ordering.php'" style="padding: 25px 30px; border-radius: 16px;">
+                        <div class="feature-icon" style="font-size: 2.5rem; margin-bottom: 15px;">
                             <i class="fas fa-utensils"></i>
                         </div>
-                        <span>Food Ordering</span>
+                        <span style="font-size: 2rem; font-weight: 700;">Food Ordering</span>
                     </div>
-                    <div class="feature-item" onclick="showFeatureNotification('Event Catering')">
-                        <div class="feature-icon">
+                    <div class="feature-item" onclick="showFeatureNotification('Event Catering')" style="padding: 25px 30px; border-radius: 16px;">
+                        <div class="feature-icon" style="font-size: 2.5rem; margin-bottom: 15px;">
                             <i class="fas fa-calendar-check"></i>
                         </div>
-                        <span>Event Catering</span>
+                        <span style="font-size: 2rem; font-weight: 700;">Event Catering</span>
                     </div>
-                    <div class="feature-item" onclick="showFeatureNotification('Media Services')">
-                        <div class="feature-icon">
+                    <div class="feature-item" onclick="showFeatureNotification('Media Services')" style="padding: 25px 30px; border-radius: 16px;">
+                        <div class="feature-icon" style="font-size: 2.5rem; margin-bottom: 15px;">
                             <i class="fas fa-photo-film"></i>
                         </div>
-                        <span>Media Services</span>
+                        <span style="font-size: 2rem; font-weight: 700;">Media Services</span>
                     </div>
-                    <div class="feature-item" onclick="showFeatureNotification('Quick Approvals')">
-                        <div class="feature-icon">
+                    <div class="feature-item" onclick="showFeatureNotification('Quick Approvals')" style="padding: 25px 30px; border-radius: 16px;">
+                        <div class="feature-icon" style="font-size: 2.5rem; margin-bottom: 15px;">
                             <i class="fas fa-clipboard-check"></i>
                         </div>
-                        <span>Quick Approvals</span>
+                        <span style="font-size: 2rem; font-weight: 700;">Quick Approvals</span>
                     </div>
                 </div>
 
                 <!-- Animated Stats -->
-                <div class="stats-bar">
+                <div class="stats-bar" style="margin-top: 50px;">
                     <div class="stat">
-                        <span class="stat-number" data-count="2500">0</span>
-                        <span class="stat-label">Employees</span>
+                        <span class="stat-number" data-count="2500" style="font-size: 4.5rem; text-shadow: 0 4px 10px rgba(0,0,0,0.5);">0</span>
+                        <span class="stat-label" style="font-size: 1.4rem; letter-spacing: 2px;">Employees</span>
                     </div>
                     <div class="stat-divider"></div>
                     <div class="stat">
-                        <span class="stat-number" data-count="150">0</span>
-                        <span class="stat-label">Daily Orders</span>
+                        <span class="stat-number" data-count="150" style="font-size: 4.5rem; text-shadow: 0 4px 10px rgba(0,0,0,0.5);">0</span>
+                        <span class="stat-label" style="font-size: 1.4rem; letter-spacing: 2px;">Daily Orders</span>
                     </div>
                     <div class="stat-divider"></div>
                     <div class="stat">
-                        <span class="stat-number" data-count="99">0</span>
-                        <span class="stat-label">% Uptime</span>
+                        <span class="stat-number" data-count="99" style="font-size: 4.5rem; text-shadow: 0 4px 10px rgba(0,0,0,0.5);">0</span>
+                        <span class="stat-label" style="font-size: 1.4rem; letter-spacing: 2px;">% Uptime</span>
                     </div>
                 </div>
             </div>
             
             <!-- Footer Text -->
-            <div class="branding-footer">
-                <div class="footer-govt-text">
+            <div class="branding-footer" style="padding-bottom: 40px;">
+                <div class="footer-govt-text" style="font-size: 1.6rem; letter-spacing: 2px;">
                     <i class="fas fa-landmark"></i>
                     <span>Government of India | Department of Space</span>
                 </div>

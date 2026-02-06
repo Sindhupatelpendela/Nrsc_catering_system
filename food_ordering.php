@@ -119,41 +119,41 @@ session_start();
     <div class="login-container" style="display: flex; width: 100vw; height: 100vh; overflow: hidden;">
         <!-- Left Panel - Branding (Food Ordering Specific) -->
         <div class="branding-panel" style="width: 50%; border-right: 2px solid rgba(255,255,255,0.1); position: relative;">
-            <a href="index.php" class="back-nav"><i class="fas fa-arrow-left"></i> Back to Dashboard</a>
+            <a href="index.php" class="back-nav" style="font-size: 1.8rem; text-decoration: none; color: white;"><i class="fas fa-arrow-left"></i> Back to Dashboard</a>
             
-            <div class="branding-content" style="width: 100%; max-width: 1200px;">
-                <div class="main-title-container" style="justify-content: flex-start; width: 100%;">
-                    <div class="catering-logo-spinner" style="margin-right: 30px; width: 150px; height: 150px;">
-                        <i class="fas fa-utensils" style="font-size: 4.5rem;"></i>
+            <div class="branding-content" style="width: 100%; max-width: 1200px; padding-left: 0;">
+                <div class="main-title-container" style="justify-content: flex-start; width: 100%; margin-left: -120px;">
+                    <div class="catering-logo-spinner" style="margin-right: 15px; width: 150px; height: 150px;">
+                        <i class="fas fa-utensils" style="font-size: 5rem;"></i>
                     </div>
                     <div style="flex: 1;">
-                        <h1 class="brand-title-large" style="font-size: 6.5rem; line-height: 1; white-space: nowrap; letter-spacing: 6px; text-shadow: 0 0 30px rgba(255, 153, 51, 0.6);">
+                        <h1 class="brand-title-large" style="font-size: 8rem; line-height: 1; white-space: nowrap; letter-spacing: 6px; text-shadow: 0 0 30px rgba(255, 153, 51, 0.6);">
                             FOOD ORDERING PORTAL
                         </h1>
                     </div>
                 </div>
 
-                <div class="identity-lockup" style="width: 100%; padding: 40px;">
-                    <div class="logo-box" style="width: 180px; padding-right: 40px;">
-                        <img src="./assets/nrsc_isro_logo.png" alt="NRSC ISRO Logo" class="side-logo">
+                <div class="identity-lockup" style="width: 100%; padding: 30px; margin-top: 40px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 25px; backdrop-filter: blur(12px); display: flex; align-items: center; box-shadow: 0 15px 35px rgba(0,0,0,0.2); max-width: 95%;">
+                    <div class="logo-box" style="width: 140px; min-width: 140px; padding-right: 25px;">
+                        <img src="./assets/nrsc_isro_logo.png" alt="NRSC ISRO Logo" class="side-logo" style="width: 100%; height: auto;">
                     </div>
-                    <div class="org-text-stack">
-                        <h2 class="org-name" style="font-size: 3.5rem; line-height: 1.1; letter-spacing: 2px; white-space: nowrap;">National Remote Sensing Centre</h2>
-                        <h3 class="org-dept" style="font-size: 1.8rem; margin-top: 10px; letter-spacing: 3px; font-weight: 700;">Indian Space Research Organisation</h3>
-                        <p class="org-city" style="font-size: 1.4rem; margin-top: 8px; letter-spacing: 6px; color: rgba(255,255,255,0.8);">Hyderabad</p>
+                    <div class="org-text-stack" style="flex: 1;">
+                        <h2 class="org-name" style="font-size: 3.5rem; line-height: 1.1; letter-spacing: 1.5px; margin-bottom: 8px; font-weight: 800; text-transform: uppercase;">National Remote Sensing Centre</h2>
+                        <h3 class="org-dept" style="font-size: 2rem; letter-spacing: 2px; font-weight: 600; color: #EA580C; margin-bottom: 8px;">Indian Space Research Organisation</h3>
+                        <p class="org-city" style="font-size: 1.6rem; letter-spacing: 4px; color: rgba(255,255,255,0.7); font-weight: 500;">Hyderabad</p>
                     </div>
                 </div>
                 
-                <div class="stats-bar" style="margin-top: 40px; justify-content: flex-start; background: none; border: none; padding-left: 0;">
+                <div class="stats-bar" style="margin-top: 50px; justify-content: flex-start; background: none; border: none; padding-left: 0;">
                     <div class="stat" style="text-align: left;">
-                        <span class="stat-number" style="font-size: 3.5rem; text-align: left; text-shadow: 0 4px 10px rgba(0,0,0,0.5);">Secure Access</span>
-                        <span class="stat-label" style="text-align: left; font-size: 1.1rem; letter-spacing: 3px; font-weight: 600;">Authorized Personnel Only</span>
+                        <span class="stat-number" style="font-size: 4.5rem; text-align: left; text-shadow: 0 4px 10px rgba(0,0,0,0.5);">Secure Access</span>
+                        <span class="stat-label" style="text-align: left; font-size: 1.6rem; letter-spacing: 3px; font-weight: 600;">Authorized Personnel Only</span>
                     </div>
                 </div>
             </div>
             
             <div class="branding-footer" style="left: 40px; transform: none;">
-                <div class="footer-govt-text" style="font-size: 1.3rem;">
+                <div class="footer-govt-text" style="font-size: 1.8rem;">
                     <i class="fas fa-landmark"></i>
                     <span>Government of India | Department of Space</span>
                 </div>
@@ -177,7 +177,7 @@ session_start();
         ">
             <div class="form-wrapper" style="max-width: 600px; width: 85%;">
                 <div class="form-header" style="text-align: left; margin-bottom: 50px;">
-                    <div class="welcome-badge" style="margin-bottom: 25px; padding: 12px 30px; font-size: 1.4rem;">
+                    <div class="welcome-badge" style="margin-bottom: 25px; padding: 15px 35px; font-size: 1.6rem;">
                         <i class="fas fa-user-lock"></i>
                         <span>Select Login Type</span>
                     </div>
@@ -187,81 +187,81 @@ session_start();
 
                 <!-- 1. Employee Login -->
                 <div class="role-card" onclick="openLogin('employee')" style="padding: 35px; margin-bottom: 30px; border-width: 2px;">
-                    <div class="role-icon" style="width: 90px; height: 90px; font-size: 2.5rem; min-width: 90px;">
+                    <div class="role-icon" style="width: 100px; height: 100px; font-size: 3rem; min-width: 100px;">
                         <i class="fas fa-id-badge"></i>
                     </div>
                     <div class="role-info">
-                        <h3 style="font-size: 3.2rem; margin-bottom: 10px; font-weight: 800;">Employee Login</h3>
-                        <p style="font-size: 1.6rem;">For Staff & General Users</p>
+                        <h3 style="font-size: 3.5rem; margin-bottom: 10px; font-weight: 800;">Employee Login</h3>
+                        <p style="font-size: 1.8rem;">For Staff & General Users</p>
                     </div>
-                    <div class="role-arrow" style="font-size: 2.5rem;">
+                    <div class="role-arrow" style="font-size: 3rem;">
                         <i class="fas fa-chevron-right"></i>
                     </div>
                 </div>
 
                 <!-- 2. Approval Login -->
                 <div class="role-card" onclick="openLogin('officer')" style="padding: 35px; margin-bottom: 30px; border-width: 2px;">
-                    <div class="role-icon" style="width: 90px; height: 90px; font-size: 2.5rem; min-width: 90px;">
+                    <div class="role-icon" style="width: 100px; height: 100px; font-size: 3rem; min-width: 100px;">
                         <i class="fas fa-user-tie"></i>
                     </div>
                     <div class="role-info">
-                        <h3 style="font-size: 3.2rem; margin-bottom: 10px; font-weight: 800;">APPROVAL LOGIN</h3>
-                        <p style="font-size: 1.6rem;">For Reporting Officers</p>
+                        <h3 style="font-size: 3.5rem; margin-bottom: 10px; font-weight: 800;">APPROVAL LOGIN</h3>
+                        <p style="font-size: 1.8rem;">For Reporting Officers</p>
                     </div>
-                    <div class="role-arrow" style="font-size: 2.5rem;">
+                    <div class="role-arrow" style="font-size: 3rem;">
                         <i class="fas fa-chevron-right"></i>
                     </div>
                 </div>
 
                 <!-- 3. Catering Approval Login -->
                 <div class="role-card" onclick="openLogin('canteen')" style="padding: 35px; margin-bottom: 30px; border-width: 2px;">
-                    <div class="role-icon" style="width: 90px; height: 90px; font-size: 2.5rem; min-width: 90px;">
+                    <div class="role-icon" style="width: 100px; height: 100px; font-size: 3rem; min-width: 100px;">
                         <i class="fas fa-concierge-bell"></i>
                     </div>
                     <div class="role-info">
-                        <h3 style="font-size: 3.2rem; margin-bottom: 10px; font-weight: 800;">CATERING ADMIN</h3>
-                        <p style="font-size: 1.6rem;">For Canteen Management</p>
+                        <h3 style="font-size: 3.5rem; margin-bottom: 10px; font-weight: 800;">CATERING ADMIN</h3>
+                        <p style="font-size: 1.8rem;">For Canteen Management</p>
                     </div>
-                    <div class="role-arrow" style="font-size: 2.5rem;">
+                    <div class="role-arrow" style="font-size: 3rem;">
                         <i class="fas fa-chevron-right"></i>
                     </div>
                 </div>
 
                 <!-- Hidden Login Form Container -->
                 <div id="loginFormContainer" style="display: none; margin-top: 30px; animation: fadeInUp 0.5s ease;">
-                    <div style="display: flex; align-items: center; margin-bottom: 30px; gap: 15px; cursor: pointer;" onclick="closeLogin()">
-                        <i class="fas fa-arrow-left" style="color: var(--saffron); font-size: 1.4rem;"></i>
-                        <span style="color: var(--text-secondary); font-size: 1.4rem; font-weight: 600;">Back to Roles</span>
+                    <div style="display: flex; align-items: center; margin-bottom: 40px; gap: 20px; cursor: pointer;" onclick="closeLogin()">
+                        <i class="fas fa-arrow-left" style="color: var(--saffron); font-size: 2.2rem;"></i>
+                        <span style="color: var(--text-secondary); font-size: 2.2rem; font-weight: 700;">Back to Roles</span>
                     </div>
 
-                    <h3 id="formTitle" style="color: white; font-family: 'Rajdhani', sans-serif; font-size: 3.5rem; margin-bottom: 30px; font-weight: 800;">Login</h3>
+                    <h3 id="formTitle" style="color: white; font-family: 'Rajdhani', sans-serif; font-size: 4.5rem; margin-bottom: 40px; font-weight: 800;">Login</h3>
 
                     <form action="auth/login.php" method="POST" class="login-form">
                         <input type="hidden" name="role" id="loginRole" value="">
                         
-                        <div class="input-group">
-                            <label for="username" id="usernameLabel">
+                        <div class="input-group" style="margin-bottom: 40px;">
+                            <label for="username" id="usernameLabel" style="font-size: 2.2rem; margin-bottom: 15px; display: block; font-weight: 600;">
                                 <i class="fas fa-id-card"></i> ID / Username
                             </label>
                             <div class="input-wrapper">
-                                <input type="text" name="username" class="form-input" placeholder="Enter ID" required>
+                                <input type="text" name="username" class="form-input" placeholder="Enter ID" required style="padding: 25px; font-size: 2rem; border-radius: 16px;">
                             </div>
                         </div>
                         
-                        <div class="input-group">
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-                                <label for="password" style="margin-bottom: 0;"> <i class="fas fa-lock"></i> Password </label>
-                                <a href="auth/forgot_password.php" class="forgot-link" style="color: var(--saffron); text-decoration: none; transition: 0.3s; opacity: 0.9;">Forgot Password?</a>
+                        <div class="input-group" style="margin-bottom: 50px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                                <label for="password" style="margin-bottom: 0; font-size: 2.2rem; font-weight: 600;"> <i class="fas fa-lock"></i> Password </label>
+                                <a href="auth/forgot_password.php" class="forgot-link" style="color: var(--saffron); text-decoration: none; transition: 0.3s; opacity: 0.9; font-size: 1.8rem;">Forgot Password?</a>
                             </div>
                             <div class="input-wrapper" style="position: relative;">
-                                <input type="password" name="password" id="passwordInput" class="form-input" placeholder="Enter Password" required>
-                                <i class="fas fa-eye" id="togglePassword" style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); cursor: pointer; color: #1E293B; z-index: 10; font-size: 1.5rem;"></i>
+                                <input type="password" name="password" id="passwordInput" class="form-input" placeholder="Enter Password" required style="padding: 25px; font-size: 2rem; border-radius: 16px;">
+                                <i class="fas fa-eye" id="togglePassword" style="position: absolute; right: 25px; top: 50%; transform: translateY(-50%); cursor: pointer; color: #1E293B; z-index: 10; font-size: 2rem;"></i>
                             </div>
                         </div>
 
-                        <button type="submit" class="btn-login">
+                        <button type="submit" class="btn-login" style="padding: 25px; font-size: 2.4rem; border-radius: 18px;">
                             <span class="btn-text">Sign In</span>
-                            <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                            <span class="btn-icon"><i class="fas fa-arrow-right" style="font-size: 2.4rem;"></i></span>
                         </button>
                     </form>
                 </div>

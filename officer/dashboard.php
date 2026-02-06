@@ -74,43 +74,58 @@ include '../includes/header.php';
     }
 
     /* --- SIDEBAR ENHANCEMENTS (Local Override) --- */
+    .sidebar {
+        width: 380px !important; /* Increased Width */
+        background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
+        box-shadow: 4px 0 25px rgba(0,0,0,0.05);
+    }
     .sidebar .nav-item {
-        font-size: 1.6rem !important; /* Huge Menu Links */
-        padding: 22px 30px !important;
-        margin-bottom: 15px !important;
+        font-size: 2.2rem !important; /* Huge Links */
+        padding: 25px 30px !important;
+        margin-bottom: 20px !important;
         font-weight: 700 !important;
         letter-spacing: 0.5px;
-        color: #1E3A8A !important; /* Dark Blue */
-        border-radius: 16px;
+        color: #1E3A8A !important;
+        border: 2px solid #E2E8F0 !important;
+        border-radius: 20px !important;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        overflow: hidden;
+        background: #FFFFFF;
+    }
+    .sidebar .nav-item:hover {
+        background: #F8FAFC !important;
+        border-color: #3B82F6 !important;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+        color: #1E40AF !important;
     }
     .sidebar .nav-item.active {
         background: #EFF6FF !important;
-        color: #1E40AF !important; /* Slightly lighter blue for active */
-    }
-    .sidebar .nav-item i {
-        color: #1E3A8A !important; /* Icons Dark Blue too */
-        font-size: 1.6rem !important;
-        width: 35px;
+        border-color: #2563EB !important;
+        color: #1E40AF !important;
+        box-shadow: 0 8px 15px rgba(37, 99, 235, 0.1);
     }
     .sidebar .profile-name {
-        font-size: 2.2rem !important; /* Huge Profile Name */
+        font-size: 2.2rem !important;
         margin-top: 25px;
         margin-bottom: 10px;
-        color: #172554 !important; /* Very Dark Blue */
-    }
-    .sidebar .profile-role-badge {
-        font-size: 1.2rem !important;
-        padding: 10px 20px !important;
-        background: #DBEAFE !important;
-        color: #1E3A8A !important; /* Dark Blue Text */
-        font-weight: 800 !important;
+        color: #0F172A !important;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.05);
     }
     .sidebar .btn-profile-sm {
-        font-size: 1.2rem !important;
+        font-size: 1.4rem !important;
         padding: 12px 30px !important;
         color: #1E3A8A !important;
         border: 2px solid #BFDBFE !important;
         font-weight: 700 !important;
+        background: white;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .sidebar .btn-profile-sm:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(37, 99, 235, 0.15);
+        background: #F0F9FF;
     }
 
     /* --- PROFESSIONAL DASHBOARD STYLING --- */
@@ -133,14 +148,32 @@ include '../includes/header.php';
         font-size: 1rem !important;
         padding: 20px 25px !important;
     }
+
+    /* --- MASSIVE ACTION BUTTONS (User Request) --- */
+    .action-card {
+        padding: 30px 35px !important; /* Large Padding */
+        min-height: auto !important;
+        border-radius: 20px !important;
+    }
+    .action-card h4 {
+        font-size: 2.4rem !important; /* Huge Title */
+        margin-bottom: 8px !important;
+    }
+    .action-card span {
+        font-size: 1.5rem !important; /* Big Subtitle */
+    }
+    .action-card i {
+        font-size: 3rem !important; /* Huge Icon */
+    }
 </style>
 
 <div class="dashboard-container">
     <aside class="sidebar">
-        <div class="logo-area">
-            <img src="../assets/nrsc_logo_circle.png" alt="NRSC Logo" class="logo-img">
+        <div class="logo-area" style="text-align: center; padding: 30px 5px;">
+            <img src="../assets/nrsc_custom_logo.png" alt="NRSC Logo" style="width: 330px; height: 330px; object-fit: contain; margin-bottom: 20px;">
             <div class="logo-text">
-                <h2>NRSC CATERING</h2>
+                <h2 style="font-size: 3rem; color: #EA580C; font-weight: 900; letter-spacing: 0.5px; line-height: 1.1;">NRSC CATERING</h2>
+                <span style="font-size: 1.6rem; color: #64748B; font-weight: 700; text-transform: uppercase; display: block; margin-top: 10px;">Officer Portal</span>
             </div>
         </div>
 
@@ -216,6 +249,28 @@ include '../includes/header.php';
                 </div>
             </div>
         </div>
+
+        <!-- NEW: Quick Actions (Consistent with Employee) -->
+        <div class="action-section" style="margin-bottom: 50px;">
+             <h3 style="font-size: 2rem; color: #64748B; margin-bottom: 25px; text-transform: uppercase; font-weight: 700;">Quick Actions</h3>
+             <div class="actions-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;">
+                 <a href="new_request.php" class="action-card primary" style="background: linear-gradient(135deg, #0EA5E9 0%, #0284C7 100%); color: white; border: none; box-shadow: 0 10px 20px rgba(14, 165, 233, 0.3); display: flex; justify-content: space-between; align-items: center; text-decoration: none;">
+                     <div>
+                         <h4 style="font-size: 2rem; margin: 0 0 5px 0; font-weight: 700; color: white;">Create Request</h4>
+                         <span style="font-size: 1.2rem; opacity: 0.9; color: rgba(255,255,255,0.9);">Book food for meetings</span>
+                     </div>
+                     <i class="fas fa-plus-circle" style="font-size: 3rem; color: white;"></i>
+                 </a>
+                 
+                 <a href="my_requests.php" class="action-card" style="background: linear-gradient(135deg, #0EA5E9 0%, #0284C7 100%); color: white; border: none; box-shadow: 0 10px 20px rgba(14, 165, 233, 0.3); display: flex; justify-content: space-between; align-items: center; text-decoration: none;">
+                     <div>
+                         <h4 style="font-size: 2rem; margin: 0 0 5px 0; font-weight: 700; color: white;">My Reviews</h4>
+                         <span style="font-size: 1.2rem; color: rgba(255,255,255,0.9);">View your personal bookings</span>
+                     </div>
+                     <i class="fas fa-clock-rotate-left" style="font-size: 3rem; color: white; opacity: 0.9;"></i>
+                 </a>
+             </div>
+         </div>
 
         <div class="card" style="border: none; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);">
             <div class="card-header" style="background: #F1F5F9; border-bottom: 1px solid #E2E8F0; padding: 20px 25px;">

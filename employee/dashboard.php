@@ -34,16 +34,110 @@ define('PAGE_TITLE', 'Employee Dashboard');
 include '../includes/header.php'; 
 ?>
 
+<style>
+    /* --- SIDEBAR ENHANCEMENTS (Employee Portal) --- */
+    .sidebar {
+        width: 380px !important; /* Increased Width for Larger Text */
+        background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
+        border-right: 1px solid #E2E8F0;
+    }
+    
+    /* Category Headers (Menu, Account) - GREEN UPDATE */
+    .sidebar .menu-category {
+        font-size: 1.8rem !important; /* Much Bigger */
+        font-weight: 900 !important;
+        color: #16A34A !important; 
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin: 35px 0 15px 5px !important;
+        padding-left: 10px;
+        border-left: 5px solid #16A34A;
+    }
+
+    /* Navigation Links */
+    .sidebar .nav-menu li a {
+        display: flex !important;
+        align-items: center;
+        font-size: 2.2rem !important; /* Huge Links */
+        padding: 25px 30px !important;
+        margin-bottom: 20px !important;
+        font-weight: 700 !important;
+        color: #334155 !important;
+        border: 2px solid #E2E8F0 !important;
+        border-radius: 20px !important;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        background: #FFFFFF;
+        text-decoration: none;
+    }
+
+    .sidebar .nav-menu li a:hover {
+         transform: translateX(10px);
+         border-color: #3B82F6 !important;
+         background: #EFF6FF !important;
+         color: #1E40AF !important;
+         box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    .sidebar .nav-menu li a.active {
+         background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%) !important;
+         border-color: #2563EB !important;
+         color: #1E40AF !important;
+         box-shadow: 0 5px 15px rgba(37, 99, 235, 0.15);
+    }
+
+    .sidebar .nav-menu li a i {
+        width: 50px;
+        font-size: 2.2rem;
+        text-align: center;
+        margin-right: 15px;
+        color: #64748B;
+        transition: color 0.3s;
+    }
+    
+    .sidebar .nav-menu li a:hover i,
+    .sidebar .nav-menu li a.active i {
+        color: #2563EB;
+    }
+    
+    /* Stats & Tables */
+    .stat-card {
+        transition: transform 0.3s;
+        border: 1px solid #E2E8F0;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+    }
+    .stat-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* --- MASSIVE ACTION BUTTONS (User Request) --- */
+    .action-card {
+        padding: 30px 35px !important; /* Large Padding */
+        min-height: auto !important;
+        border-radius: 20px !important;
+    }
+    .action-card h4 {
+        font-size: 2.4rem !important; /* Huge Title */
+        margin-bottom: 8px !important;
+    }
+    .action-card span {
+        font-size: 1.5rem !important; /* Big Subtitle */
+    }
+    .action-card i {
+        font-size: 3rem !important; /* Huge Icon */
+    }
+</style>
+
 <!-- Wrapper controlled by main.css -->
 <div class="dashboard-container">
     
     <!-- Sidebar -->
     <aside class="sidebar">
-        <div class="logo-area">
-            <div class="logo-icon"><i class="fas fa-utensils"></i></div>
+        <div class="logo-area" style="text-align: center; padding: 30px 5px;">
+            <img src="../assets/nrsc_custom_logo.png" alt="NRSC Logo" style="width: 330px; height: 330px; object-fit: contain; margin-bottom: 20px;">
             <div class="logo-text">
-                <h2>NRSC CATERING</h2>
-                <span>Employee Portal</span>
+                <h2 style="font-size: 3rem; color: #EA580C; font-weight: 900; letter-spacing: 0.5px; line-height: 1.1;">NRSC CATERING</h2>
+                <span style="font-size: 1.6rem; color: #64748B; font-weight: 700; text-transform: uppercase; display: block; margin-top: 10px;">Employee Portal</span>
             </div>
         </div>
 
@@ -111,45 +205,44 @@ include '../includes/header.php';
         <div class="action-section">
              <h3>Quick Actions</h3>
              <div class="actions-grid">
-                 <a href="new_request.php" class="action-card primary">
+                 <a href="new_request.php" class="action-card primary" style="background: linear-gradient(135deg, #0EA5E9 0%, #0284C7 100%); color: white; border: none; box-shadow: 0 10px 20px rgba(14, 165, 233, 0.3);">
                      <div>
-                         <h4>Create New Request</h4>
-                         <span>Book food or drinks for a meeting</span>
+                         <h4 style="color: white; font-weight: 800;">Create New Request</h4>
+                         <span style="color: rgba(255,255,255,0.9);">Book food or drinks for a meeting</span>
                      </div>
-                     <i class="fas fa-plus"></i>
+                     <i class="fas fa-plus-circle" style="color: white; opacity: 0.9;"></i>
                  </a>
                  
-                 <a href="my_requests.php" class="action-card" style="border-color: var(--primary-color); background: #FFF7ED;">
+                 <a href="my_requests.php" class="action-card" style="background: linear-gradient(135deg, #0EA5E9 0%, #0284C7 100%); color: white; border: none; box-shadow: 0 10px 20px rgba(14, 165, 233, 0.3);">
                      <div>
-                         <h4>My Requests</h4>
-                         <span>Track your personal bookings</span>
+                         <h4 style="color: white; font-weight: 800;">My Requests</h4>
+                         <span style="color: rgba(255,255,255,0.9);">Track your personal bookings</span>
                      </div>
-                     <i class="fas fa-clock-rotate-left" style="color: var(--primary-color);"></i>
+                     <i class="fas fa-clock-rotate-left" style="color: white; opacity: 0.9;"></i>
                  </a>
 
-                 <a href="my_requests.php" class="action-card">
+                 <a href="my_requests.php" class="action-card" style="background: linear-gradient(135deg, #0EA5E9 0%, #0284C7 100%); color: white; border: none; box-shadow: 0 10px 20px rgba(14, 165, 233, 0.3);">
                      <div>
-                         <h4>View All Requests</h4>
-                         <span>Check status of past requests</span>
+                         <h4 style="color: white; font-weight: 800;">View All Requests</h4>
+                         <span style="color: rgba(255,255,255,0.9);">Check status of past requests</span>
                      </div>
-                     <i class="fas fa-arrow-right"></i>
+                     <i class="fas fa-arrow-right" style="color: white; opacity: 0.9;"></i>
                  </a>
 
-
-                 <a href="my_requests.php" class="action-card" style="border-color: #3B82F6; background: #EFF6FF;">
+                 <a href="my_requests.php" class="action-card" style="background: linear-gradient(135deg, #0EA5E9 0%, #0284C7 100%); color: white; border: none; box-shadow: 0 10px 20px rgba(14, 165, 233, 0.3);">
                      <div>
-                         <h4 style="color: #2563EB;">Update My Request</h4>
-                         <span style="color: #1E3A8A;">Modify details or guests</span>
+                         <h4 style="color: white; font-weight: 800;">Update My Request</h4>
+                         <span style="color: rgba(255,255,255,0.9);">Modify details or guests</span>
                      </div>
-                     <i class="fas fa-edit" style="color: #2563EB;"></i>
+                     <i class="fas fa-edit" style="color: white; opacity: 0.9;"></i>
                  </a>
 
-                 <a href="my_requests.php" class="action-card" style="border-color: #64748B; background: #F8FAFC;">
+                 <a href="my_requests.php" class="action-card" style="background: linear-gradient(135deg, #0EA5E9 0%, #0284C7 100%); color: white; border: none; box-shadow: 0 10px 20px rgba(14, 165, 233, 0.3);">
                      <div>
-                         <h4 style="color: #475569;">Cancel My Request</h4>
-                         <span style="color: #334155;">Withdraw an approved order</span>
+                         <h4 style="color: white; font-weight: 800;">Cancel My Request</h4>
+                         <span style="color: rgba(255,255,255,0.9);">Withdraw an approved order</span>
                      </div>
-                     <i class="fas fa-ban" style="color: #475569;"></i>
+                     <i class="fas fa-ban" style="color: white; opacity: 0.9;"></i>
                  </a>
              </div>
          </div>
