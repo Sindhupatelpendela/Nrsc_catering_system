@@ -17,22 +17,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt = $pdo->prepare("SELECT * FROM users WHERE userid = ?");
         $stmt->execute([$username]);
         $user = $stmt->fetch();
+        
+        // Get requested role from form (if available)
+        $requested_role = isset($_POST['role']) ? trim($_POST['role']) : '';
 
         if ($user && password_verify($password, $user['password'])) {
-            // Check status
+            // Check user status
             if ($user['status'] !== 'active') {
                 header("Location: ../food_ordering.php?error=Account is inactive");
                 exit;
             }
 
-            // Success
+            // --- STRICT ROLE VALIDATION ---
+            // If a specific role was requested via the login form, ensure it matches the user's DB role.
+            if (!empty($requested_role) && $user['role'] !== $requested_role) {
+                // Determine user-friendly role names
+                $db_role_name = ucfirst($user['role']);
+                $req_role_name = ucfirst($requested_role);
+                header("Location: ../food_ordering.php?error=Access Denied. You are registered as an $db_role_name, not an $req_role_name.");
+                exit;
+            }
+
+            // Success - Set Session
             session_regenerate_id(true); // Prevent session fixation
             $_SESSION['user_id'] = $user['id'];
-            $_SESSION['username'] = $user['userid']; // Map userid to session username for compatibility
+            $_SESSION['username'] = $user['userid'];
             $_SESSION['role'] = $user['role'];
-            $_SESSION['full_name'] = $user['name']; // Map name to full_name
+            $_SESSION['full_name'] = $user['name']; 
             $_SESSION['department'] = $user['department'];
-            // $_SESSION['designation'] = $user['designation']; // Removed in new schema
 
             // Redirect based on role
             switch ($user['role']) {

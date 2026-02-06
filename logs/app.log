@@ -406,3 +406,5 @@ Stack trace:
 [05-Feb-2026 07:49:11 Europe/Berlin] PHP Warning:  Undefined variable $current_user in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 260
 [05-Feb-2026 07:49:11 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 260
 [05-Feb-2026 07:49:11 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\profile.php on line 260
+[06-Feb-2026 07:18:40 Europe/Berlin] PHP Warning:  Undefined variable $categories in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\new_request.php on line 209
+[06-Feb-2026 07:18:40 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\hp\OneDrive\Desktop\NRSC-Catering-System\officer\new_request.php on line 209

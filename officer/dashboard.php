@@ -29,7 +29,27 @@ $sql = "
 ";
 
 $tab = isset($_GET['tab']) ? $_GET['tab'] : 'pending';
-$status_condition = ($tab == 'history') ? " AND (r.status = 'approved' OR r.status = 'rejected' OR r.status = 'completed')" : " AND r.status = 'pending'";
+$status_condition = "";
+$section_title = "Pending Approval Requests";
+
+switch ($tab) {
+    case 'approved':
+        $status_condition = " AND r.status = 'approved'";
+        $section_title = "Approved Orders";
+        break;
+    case 'completed':
+        $status_condition = " AND r.status = 'completed'";
+        $section_title = "Completed Orders";
+        break;
+    case 'rejected': // Just in case
+        $status_condition = " AND r.status = 'rejected'";
+        $section_title = "Rejected Orders";
+        break;
+    default:
+        $status_condition = " AND r.status = 'pending'";
+        $section_title = "Pending Approval Requests";
+        break;
+}
 
 // Fetch Table Data
 $table_sql = "
@@ -250,38 +270,30 @@ include '../includes/header.php';
             </div>
         </div>
 
-        <!-- NEW: Quick Actions (Consistent with Employee) -->
+        <!-- NEW: Quick Actions -->
         <div class="action-section" style="margin-bottom: 50px;">
-             <h3 style="font-size: 2rem; color: #64748B; margin-bottom: 25px; text-transform: uppercase; font-weight: 700;">Quick Actions</h3>
-             <div class="actions-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;">
-                 <a href="new_request.php" class="action-card primary" style="background: linear-gradient(135deg, #0EA5E9 0%, #0284C7 100%); color: white; border: none; box-shadow: 0 10px 20px rgba(14, 165, 233, 0.3); display: flex; justify-content: space-between; align-items: center; text-decoration: none;">
+             <h3 style="font-size: 2rem; color: #64748B; margin-bottom: 25px; text-transform: uppercase; font-weight: 700;">Actions</h3>
+             <div class="actions-grid" style="display: grid; grid-template-columns: repeat(1, 1fr); gap: 30px;">
+                 <a href="dashboard.php?tab=pending" class="action-card primary" style="background: linear-gradient(135deg, #16A34A 0%, #15803D 100%); color: white; border: none; box-shadow: 0 10px 20px rgba(22, 163, 74, 0.3); display: flex; justify-content: space-between; align-items: center; text-decoration: none;">
                      <div>
-                         <h4 style="font-size: 2rem; margin: 0 0 5px 0; font-weight: 700; color: white;">Create Request</h4>
-                         <span style="font-size: 1.2rem; opacity: 0.9; color: rgba(255,255,255,0.9);">Book food for meetings</span>
+                         <h4 style="font-size: 2rem; margin: 0 0 5px 0; font-weight: 700; color: white;">Approve Requests</h4>
+                         <span style="font-size: 1.2rem; opacity: 0.9; color: rgba(255,255,255,0.9);">Review and sanction pending employee requests</span>
                      </div>
-                     <i class="fas fa-plus-circle" style="font-size: 3rem; color: white;"></i>
-                 </a>
-                 
-                 <a href="my_requests.php" class="action-card" style="background: linear-gradient(135deg, #0EA5E9 0%, #0284C7 100%); color: white; border: none; box-shadow: 0 10px 20px rgba(14, 165, 233, 0.3); display: flex; justify-content: space-between; align-items: center; text-decoration: none;">
-                     <div>
-                         <h4 style="font-size: 2rem; margin: 0 0 5px 0; font-weight: 700; color: white;">My Reviews</h4>
-                         <span style="font-size: 1.2rem; color: rgba(255,255,255,0.9);">View your personal bookings</span>
-                     </div>
-                     <i class="fas fa-clock-rotate-left" style="font-size: 3rem; color: white; opacity: 0.9;"></i>
+                     <i class="fas fa-check-double" style="font-size: 3rem; color: white;"></i>
                  </a>
              </div>
          </div>
 
         <div class="card" style="border: none; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);">
             <div class="card-header" style="background: #F1F5F9; border-bottom: 1px solid #E2E8F0; padding: 20px 25px;">
-                <h3 style="color: #334155; font-size: 1.2rem;">Pending Approval Requests</h3>
+                <h3 style="color: #334155; font-size: 1.2rem;"><?php echo $section_title; ?></h3>
             </div>
             
             <div class="card-body" style="padding: 0;">
                 <?php if(empty($all_requests)): ?>
                      <div style="text-align: center; padding: 50px; color: #94A3B8;">
                         <i class="far fa-folder-open" style="font-size: 3rem; margin-bottom: 15px;"></i>
-                        <p>No pending requests found.</p>
+                        <p>No requests found in <?php echo strtolower($section_title); ?>.</p>
                      </div>
                 <?php else: ?>
                     <table style="width: 100%; border-collapse: collapse;">
@@ -311,6 +323,7 @@ include '../includes/header.php';
                                 <td style="padding: 20px 25px; font-weight: 600;">₹<?php echo number_format($req['total_amount'] ?? 0, 2); ?></td>
                                 <td style="padding: 20px 25px; color: #64748B;"><?php echo date('d M', strtotime($req['date_of_request'])); ?></td>
                                 <td style="padding: 20px 25px;">
+                                    <?php if ($req['status'] === 'pending'): ?>
                                     <form action="../handlers/approval_handler.php" method="POST" style="display: inline;">
                                         <input type="hidden" name="request_id" value="<?php echo $req['id']; ?>">
                                         <input type="hidden" name="type" value="<?php echo $req['type']; ?>">
@@ -319,6 +332,10 @@ include '../includes/header.php';
                                             Review
                                         </button>
                                     </form>
+                                    <?php else: ?>
+                                        <span class="status-badge status-<?php echo $req['status']; ?>"><?php echo ucfirst($req['status']); ?></span>
+                                    <?php endif; ?>
+                                </td>                                    </form>
                                  </td>
                             </tr>
                             <?php endforeach; ?>

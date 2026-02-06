@@ -167,12 +167,11 @@ include __DIR__ . '/../includes/header.php';
             <li><a href="dashboard.php" class="nav-item">
                 <i class="fas fa-th-large"></i> Dashboard
             </a></li>
-            <li><a href="new_request.php" class="nav-item">
-                <i class="fas fa-plus-circle"></i> New Request
-            </a></li>
-            <li><a href="my_requests.php" class="nav-item active">
+            <!-- New Request Removed -->
+            <!-- My Requests Removed for Officers as they only Approve -->
+            <!-- <li><a href="my_requests.php" class="nav-item active">
                 <i class="fas fa-clock-rotate-left"></i> My Requests
-            </a></li>
+            </a></li> -->
              <div style="flex: 1;"></div>
             <li><a href="dashboard.php?tab=approved" class="nav-item">
                 <i class="fas fa-check-circle"></i> Approved Orders
@@ -198,9 +197,7 @@ include __DIR__ . '/../includes/header.php';
                 <p class="breadcrumb">OFFICER PORTAL / HISTORY</p>
                 <h1>My Request History</h1>
             </div>
-            <a href="new_request.php" class="btn-lg btn-primary" style="text-decoration: none;">
-                <i class="fas fa-plus-circle" style="margin-right: 10px;"></i> New Request
-            </a>
+            <!-- New Request Button Removed -->
         </header>
 
         <div class="card">
@@ -224,7 +221,7 @@ include __DIR__ . '/../includes/header.php';
                     <i class="fas fa-folder-open" style="font-size: 4rem; color: #CBD5E1; margin-bottom: 20px;"></i>
                     <h3 style="color: #64748B; font-size: 1.5rem;">No requests found</h3>
                     <p style="color: #94A3B8; margin-bottom: 30px;">You haven't made any catering requests yet.</p>
-                    <a href="new_request.php" class="btn-primary" style="padding: 15px 30px; border-radius: 12px; font-weight: 700; text-decoration: none;">Create First Request</a>
+                    <!-- Create Button Removed -->
                 </div>
             <?php else: ?>
                 <div style="overflow-x: auto;">

@@ -11,6 +11,9 @@ if (!function_exists('requireRole')) {
     }
 }
 requireRole('officer');
+// DISABLED: Officers cannot create requests
+header("Location: dashboard.php?error=Officer creation disabled");
+exit;
 
 $pageTitle = 'New Catering Request';
 require_once __DIR__ . '/../config/config.php';
